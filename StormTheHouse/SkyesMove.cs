@@ -11,7 +11,6 @@ public class SkyesMove : MonoBehaviour
 	void Update ()
 	{
 		InvokeRepeating ("SkyMoving", StartTime, RepeatTime);
-		
 		if (transform.position.y <= -73) {			
 			Application.LoadLevel (LevelName);
 		}
